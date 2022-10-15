@@ -15,12 +15,17 @@
 	border: none;
 	color: var(--white-color);
 	background-color: var(--accent-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	
 	cursor: pointer;
 
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	
+	&:hover,
+	&:focus {
+			background-color: var(--button-dark);
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		}
 
 	@media screen and (min-width: 1200px) {
 		padding: 10px 32px;
@@ -32,7 +37,3 @@
 	}
 }
 
-.btn:hover,
-.btn:focus {
-	background-color: var(--button-dark);
-}

@@ -28,7 +28,15 @@
 }
 
 .team__list {
-  @media screen and (min-width: 768px) {
+  display: flex;
+  gap: 30px;
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 768px) {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
